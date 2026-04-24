@@ -1,0 +1,6 @@
+.idea/
+.vscode/
+models/
+logs/
+outputs/
+dataset/

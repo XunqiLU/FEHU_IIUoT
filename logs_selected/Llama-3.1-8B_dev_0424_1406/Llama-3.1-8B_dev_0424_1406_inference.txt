@@ -1,0 +1,70 @@
+=== Inference Runtime Log for Llama-3.1-8B_dev_0424_1406 ===
+
+[INFO] Loading official dictionaries and hierarchy...
+[SUCCESS] Dictionaries loaded successfully.
+
+[INFO] Initializing vLLM engine...
+INFO 04-24 14:06:07 [utils.py:233] non-default args: {'trust_remote_code': True, 'max_model_len': 20480, 'disable_log_stats': True, 'model': '/root/autodl-tmp/FEHU/models/LLM-Research/Meta-Llama-3.1-8B-Instruct'}
+INFO 04-24 14:06:07 [model.py:549] Resolved architecture: LlamaForCausalLM
+INFO 04-24 14:06:07 [model.py:1678] Using max model len 20480
+INFO 04-24 14:06:07 [scheduler.py:238] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 04-24 14:06:07 [vllm.py:790] Asynchronous scheduling is enabled.
+(EngineCore pid=2528) INFO 04-24 14:06:08 [core.py:105] Initializing a V1 LLM engine (v0.19.0) with config: model='/root/autodl-tmp/FEHU/models/LLM-Research/Meta-Llama-3.1-8B-Instruct', speculative_config=None, tokenizer='/root/autodl-tmp/FEHU/models/LLM-Research/Meta-Llama-3.1-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=20480, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=/root/autodl-tmp/FEHU/models/LLM-Research/Meta-Llama-3.1-8B-Instruct, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'splitting_ops': ['vllm::unified_attention', 'vllm::unified_attention_with_output', 'vllm::unified_mla_attention', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::gdn_attention_core', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_images_per_batch': 0, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}
+(EngineCore pid=2528) INFO 04-24 14:06:09 [parallel_state.py:1400] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.17.0.11:43211 backend=nccl
+(EngineCore pid=2528) INFO 04-24 14:06:09 [parallel_state.py:1716] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=2528) INFO 04-24 14:06:09 [gpu_model_runner.py:4735] Starting to load model /root/autodl-tmp/FEHU/models/LLM-Research/Meta-Llama-3.1-8B-Instruct...
+(EngineCore pid=2528) INFO 04-24 14:06:10 [cuda.py:334] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=2528) INFO 04-24 14:06:10 [flash_attn.py:596] Using FlashAttention version 2
+(EngineCore pid=2528) <frozen importlib._bootstrap_external>:1184: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(EngineCore pid=2528) <frozen importlib._bootstrap_external>:1184: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:02,  1.34it/s]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.11it/s]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:02<00:00,  1.07it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03<00:00,  1.38it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03<00:00,  1.27it/s]
+(EngineCore pid=2528) 
+(EngineCore pid=2528) INFO 04-24 14:06:13 [default_loader.py:384] Loading weights took 3.20 seconds
+(EngineCore pid=2528) INFO 04-24 14:06:14 [gpu_model_runner.py:4820] Model loading took 14.99 GiB memory and 3.854272 seconds
+(EngineCore pid=2528) INFO 04-24 14:06:17 [backends.py:1051] Using cache directory: /root/.cache/vllm/torch_compile_cache/b4e118318d/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=2528) INFO 04-24 14:06:17 [backends.py:1111] Dynamo bytecode transform time: 2.55 s
+(EngineCore pid=2528) INFO 04-24 14:06:19 [backends.py:285] Directly load the compiled graph(s) for compile range (1, 8192) from the cache, took 1.273 s
+(EngineCore pid=2528) INFO 04-24 14:06:19 [decorators.py:303] Directly load AOT compilation from path /root/.cache/vllm/torch_compile_cache/torch_aot_compile/511272f1def7342bc955a12e8e9f8ee47b0bcfc6feea808c5cde8a7a3b247a69/rank_0_0/model
+(EngineCore pid=2528) INFO 04-24 14:06:19 [monitor.py:48] torch.compile took 4.42 s in total
+(EngineCore pid=2528) INFO 04-24 14:06:19 [monitor.py:76] Initial profiling/warmup run took 0.16 s
+(EngineCore pid=2528) INFO 04-24 14:06:20 [kv_cache_utils.py:829] Overriding num_gpu_blocks=0 with num_gpu_blocks_override=512
+(EngineCore pid=2528) INFO 04-24 14:06:20 [gpu_model_runner.py:5876] Profiling CUDA graph memory: PIECEWISE=51 (largest=512), FULL=35 (largest=256)
+(EngineCore pid=2528) INFO 04-24 14:06:21 [gpu_model_runner.py:5955] Estimated CUDA graph memory: 0.53 GiB total
+(EngineCore pid=2528) INFO 04-24 14:06:21 [gpu_worker.py:436] Available KV cache memory: 5.21 GiB
+(EngineCore pid=2528) INFO 04-24 14:06:21 [gpu_worker.py:470] In v0.19, CUDA graph memory profiling will be enabled by default (VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=1), which more accurately accounts for CUDA graph memory during KV cache allocation. To try it now, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=1 and increase --gpu-memory-utilization from 0.9000 to 0.9223 to maintain the same effective KV cache size.
+(EngineCore pid=2528) INFO 04-24 14:06:21 [kv_cache_utils.py:1319] GPU KV cache size: 42,704 tokens
+(EngineCore pid=2528) INFO 04-24 14:06:21 [kv_cache_utils.py:1324] Maximum concurrency for 20,480 tokens per request: 2.09x
+Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 51/51 [00:02<00:00, 21.33it/s]
+Capturing CUDA graphs (decode, FULL): 100%|██████████| 35/35 [00:01<00:00, 28.68it/s]
+(EngineCore pid=2528) INFO 04-24 14:06:26 [gpu_model_runner.py:6046] Graph capturing finished in 4 secs, took 0.48 GiB
+(EngineCore pid=2528) INFO 04-24 14:06:26 [gpu_worker.py:597] CUDA graph pool memory: 0.48 GiB (actual), 0.53 GiB (estimated), difference: 0.04 GiB (9.3%).
+(EngineCore pid=2528) INFO 04-24 14:06:26 [core.py:283] init engine (profile, create kv cache, warmup model) took 11.76 seconds
+
+[INFO] Loading development dataset from: /root/autodl-tmp/FEHU/dataset/dev/dev_event_base.json
+
+[INFO] Constructing prompts for batch inference...
+
+[INFO] Executing batch inference on 177 items...
+Rendering prompts: 100%|██████████| 177/177 [00:01<00:00, 109.20it/s]
+Processed prompts: 100%|██████████| 177/177 [07:29<00:00,  2.54s/it, est. speed input: 1826.42 toks/s, output: 592.25 toks/s]
+
+[INFO] Parsing LLM outputs using Regex extraction...
+
+==================================================
+Parsing and Serialization Report
+==================================================
+Total articles processed: 177
+Failed JSON parses:       0
+Hallucinated labels dropped: 189
+--------------------------------------------------
+[SUCCESS] Task 1 outputs saved to: /root/autodl-tmp/FEHU/outputs/Llama-3.1-8B/task1/
+[SUCCESS] Task 2 outputs saved to: /root/autodl-tmp/FEHU/outputs/Llama-3.1-8B/task2/
+==================================================
+(EngineCore pid=2528) INFO 04-24 14:13:57 [core.py:1210] Shutdown initiated (timeout=0)
+(EngineCore pid=2528) INFO 04-24 14:13:57 [core.py:1233] Shutdown complete
+ERROR 04-24 14:13:57 [core_client.py:667] Engine core proc EngineCore died unexpectedly, shutting down client.
