@@ -19,10 +19,11 @@ try:
 except ImportError:
     genai = None
 
-# =====================================================================
-# 1. Path and Environment Settings
-# =====================================================================
+
+# --------------- Path and Environment Settings ---------------
+
 PROVIDER = "gemini"               # TODO: Change to "openai" when using GPT models
+
 MODEL_NAME = "gemini-2.5-flash"   # TODO: Change model name here
 
 DEV_DATA_FILE = "/root/autodl-tmp/FEHU/dataset/dev/dev_event_base.json"  # TODO: Change string here
@@ -62,9 +63,9 @@ metrics = {
 CONCURRENCY_LIMIT = 10
 semaphore = asyncio.Semaphore(CONCURRENCY_LIMIT)
 
-# =====================================================================
-# 2. API Client Adapter
-# =====================================================================
+
+# --------------- API Client Adapter ---------------
+
 class LLMClient:
     def __init__(self, provider: str, model_name: str):
         self.provider = provider.lower()
@@ -107,9 +108,9 @@ class LLMClient:
             )
             return response.choices[0].message.content.strip()
 
-# =====================================================================
-# 3. Main Async Processing Logic
-# =====================================================================
+
+# --------------- Main Async Processing Logic ---------------
+
 async def process_article(guid: str, article_data: dict, client: LLMClient,
                           l1_id_map: dict, l2_id_map: dict, dir_id_map: dict, system_prompt: str):
 
@@ -151,7 +152,7 @@ Output ONLY a valid JSON object matching the exact structure demonstrated in the
 
             prediction = json.loads(json_str)
 
-            # ---------------- Extract Task 1 (Article Level) ----------------
+            # ---------- Extract Task 1 (Article Level) ----------
             article_hv_1a, article_hv_1b = [], []
             for actor_data in prediction.get("article_level_evaluation", []):
                 actor_id = actor_data.get("actor")
@@ -194,7 +195,7 @@ Output ONLY a valid JSON object matching the exact structure demonstrated in the
             if article_hv_1a: task1a_results.append({"guid": guid, "article_human_values": article_hv_1a})
             if article_hv_1b: task1b_results.append({"guid": guid, "article_human_values": article_hv_1b})
 
-            # ---------------- Extract Task 2 (Subevent Level) ----------------
+            # ---------- Extract Task 2 (Subevent Level) ----------
             subevents_hv_2a, subevents_hv_2b = [], []
             for se_data in prediction.get("subevent_level_evaluation", []):
                 se_id = str(se_data.get("subevent_id", ""))
@@ -250,9 +251,9 @@ Output ONLY a valid JSON object matching the exact structure demonstrated in the
             with open(FAILED_LOG_FILE, "a", encoding="utf-8") as df:
                 df.write(f"\n--- Failed GUID: {guid} ---\n{generated_text}\nError: {e}\n")
 
-# =====================================================================
-# 4. Initialization and Main Loop
-# =====================================================================
+
+# --------------- Initialization and Main Loop ---------------
+
 async def main():
     os.makedirs(TASK1_DIR, exist_ok=True)
     os.makedirs(TASK2_DIR, exist_ok=True)

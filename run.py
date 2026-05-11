@@ -4,40 +4,47 @@ import subprocess
 import datetime
 import shutil
 
-# ==========================================
-# 1. Experiment Configuration
-# ==========================================
-EXP_NAME = "Llama-3.1-8B_dev"  # TODO: Change string here
+
+# --------------- Experiment Configuration ---------------
+
+# EXP_NAME = "Llama-3.1-8B_dev"  # TODO: Change model here
+# EXP_NAME = "Ministral-3-8B_dev"
+EXP_NAME = "Qwen3-8B_dev"
 # EXP_NAME = "gemini-2.5-flash_dev"
+
 TIMESTAMP = datetime.datetime.now().strftime("%m%d_%H%M")
 RUN_ID = f"{EXP_NAME}_{TIMESTAMP}"
 
-# ==========================================
-# 2. Path Settings
-# ==========================================
+
+# --------------- Path Settings ---------------
+
 PROJECT_ROOT = "/root/autodl-tmp/FEHU"  # TODO: Change string here
 # PROJECT_ROOT = ""
+
 INFERENCE_SCRIPT = os.path.join(PROJECT_ROOT, "inference.py")  # TODO: Change string here
 # INFERENCE_SCRIPT = os.path.join(PROJECT_ROOT, "inference_api.py")
+
 EVAL_SCRIPT = os.path.join(PROJECT_ROOT, "evaluation.py")
 
-MODEL_NAME = "Llama-3.1-8B"  # TODO: Change string here
+# MODEL_NAME = "Llama-3.1-8B"  # TODO: Change model here
+# MODEL_NAME = "Ministral-3-8B"
+MODEL_NAME = "Qwen3-8B"
 # MODEL_NAME = "gemini-2.5-flash"
+
 DEFAULT_OUTPUT_DIR = os.path.join(PROJECT_ROOT, f"outputs/{MODEL_NAME}")
+
 GOLD_LABELS = os.path.join(PROJECT_ROOT, "dataset/gold_labels/dev/dev_human_values.json")  # TODO: Change string here
 
 # Directory for this specific experiment archive
 ARCHIVE_DIR = os.path.join(PROJECT_ROOT, "logs", RUN_ID)
 
-# ==========================================
-# 3. Pipeline Execution
-# ==========================================
+
+# --------------- Pipeline Execution ---------------
+
 print(f"Starting Automated Pipeline | Run ID: {RUN_ID}")
 os.makedirs(ARCHIVE_DIR, exist_ok=True)
 
-# ---------------------------------------------------------
-# Step A: Run LLM Inference (Stream logs to terminal & txt)
-# ---------------------------------------------------------
+# ---------- Step A: Run LLM Inference (Stream logs to terminal & txt) ----------
 txt_log_path = os.path.join(ARCHIVE_DIR, f"{RUN_ID}_inference.txt")
 print(f"\n[INFO] [Step 1/3] Running inference script...")
 print(f"[INFO] Terminal output & warnings are being synced to: {txt_log_path}\n")
@@ -89,9 +96,7 @@ if process.returncode != 0:
     print(f"\n[ERROR] Inference failed or was interrupted! Please check the log file: {txt_log_path}")
     sys.exit(1)
 
-# ---------------------------------------------------------
-# Step B: Run Evaluation Script (Save metrics to json)
-# ---------------------------------------------------------
+# ---------- Step B: Run Evaluation Script (Save metrics to json) ----------
 print("\n[INFO] [Step 2/3] Inference complete! Evaluating predictions...")
 eval_command = [
     "python", EVAL_SCRIPT,
@@ -114,9 +119,7 @@ else:
         f.write(result.stdout)
     print(f"[SUCCESS] Evaluation finished! Scores saved to: {json_score_path}")
 
-# ---------------------------------------------------------
-# Step C: Archive Code and Predictions (Reproducibility)
-# ---------------------------------------------------------
+# ---------- Step C: Archive Code and Predictions (Reproducibility) ----------
 print("\n[INFO] [Step 3/3] Archiving current code and model outputs for reproducibility...")
 # Backup the exact code snapshot used for this run
 shutil.copy2(INFERENCE_SCRIPT, os.path.join(ARCHIVE_DIR, "code_snapshot.py"))

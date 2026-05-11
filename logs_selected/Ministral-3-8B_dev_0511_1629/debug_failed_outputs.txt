@@ -1,0 +1,1573 @@
+
+--- Failed GUID: 1-15231-2-1 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 3-17441-15-t ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 1-15178-2-1 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 2-34752-6-2 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 1-15885-8-t ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 12-wiki-img/8436-1/8436-1-2 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 7-36865-4-1 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 1-14823-1-1 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 0-4834-16-t ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 2-34826-6-t ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 2-34513-5-t ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 1-16189-3-1 ---
+{
+    "guid": "1-16189-3-1",
+    "article_level_evaluation": [
+        {
+            "actor": "1-16189-3-1-0",
+            "reasoning_process": "The Venezuelan Government and Leadership, led by President Nicolas Maduro, exhibits a pattern of blaming external and internal adversaries for economic issues, which reflects a tendency to deflect responsibility. Their insistence on minimum wage increases as a solution to inflation, despite the severe economic contraction, suggests a contradictory approach to addressing systemic issues. The government's refusal to release economic indicators and their dismissal of potential debt defaults indicate a lack of transparency and a potential disregard for investor confidence. Additionally, their framing of the economic crisis as an 'economic war' implies a narrative of dominance and control, while their denial of economic hardship for the general public contradicts the evident suffering. The government's reliance on currency controls and accusations of price-gouging by unscrupulous capitalists also reflect a lack of systemic reform and a tendency to suppress market mechanisms.",
+            "level_1_values": [
+                {"value": "Be just", "direction": "contradictory"},
+                {"value": "Have wealth", "direction": "contradictory"},
+                {"value": "Have influence", "direction": "contradictory"},
+                {"value": "Be responsible", "direction": "contradictory"},
+                {"value": "Be honest", "direction": "contradictory"},
+                {"value": "Have a safe country", "direction": "contradictory"},
+                {"value": "Have a stable society", "direction": "contradictory"},
+                {"value": "Be respecting traditions", "direction": "contradictory"},
+                {"value": "Be capable", "direction": "contradictory"},
+                {"value": "Have a comfortable life", "direction": "contradictory"}
+            ],
+            "level_2_values": [
+                "Universalism: concern",
+                "Power: dominance",
+                "Security: societal",
+                "Benevolence: dependability",
+                "Tradition",
+                "Achievement"
+            ]
+        },
+        {
+            "actor": "1-16189-3-1-1",
+            "reasoning rampant product shortages and economic contraction, Venezuelan citizens face severe hardships such as skipping meals and waiting in long food lines. Their actions of crossing borders to buy groceries reflect a desperate attempt to secure basic needs. The citizens' lack of access to hard currency and raw materials due to currency controls highlights their vulnerability and the government's failure to ensure a comfortable life. Their situation also implies a lack of security and belonging, as they struggle to meet basic needs and face systemic instability.",
+            "level_1_values": [
+                {"value": "Have a sense of belonging", "direction": "contradictory"},
+                {"value": "Have good health", "direction": "contradictory"},
+                {"value": "Have a comfortable life", "direction": "contradictory"},
+                {"value": "Have no debts", "direction": "contradictory"},
+                {"value": "Have wealth", "direction": "contradictory"},
+                {"value": "Have a safe country", "direction": "contradictory"},
+                {"value": "Have a stable society", "direction": "contradictory"},
+                {"value": "Be capable", "direction": "contradictory"}
+            ],
+            "level_2_values": [
+                "Security: personal",
+                "Security: societal",
+                "Power: resources"
+            ]
+        },
+        {
+            "actor": "1-161089-3-1-2",
+            "reasoning_process": "The Business/Private Sector and Opposition are accused by the government of artificially creating economic problems through speculative price-gouging. Their actions, if true, would contradict values of honesty and responsibility. However, the government's narrative also implies that they are being unfairly targeted, which could be seen as an attempt to suppress market mechanisms and stifle economic freedom. The opposition's potential role in the economic crisis, as per the government's claims, could be interpreted as an attempt to undermine the government's legitimacy and control.",
+            "level_1_values": [
+                {"value": "Be honest", "direction": "contradictory"},
+                {"value": "Be responsible", "direction": "contradictory"},
+                {"value": "Have freedom of action", "direction": "contradictory"},
+                {"value": "Have wealth", "direction": "contradictory"},
+                {"value": "Be capable", "direction": "contradictory"}
+            ],
+            "level_1_values": [
+                {"value": "Have influence", "direction": "contradictory"},
+                {"value": "Have the right to command", "direction": "contradictory"}
+            ],
+            "level_2_values": [
+                "Benevolence: dependability",
+                "Power: dominance",
+                "Self-direction: action"
+            ]
+        }
+    ],
+    "subevent_level_evaluation": [
+        {
+            "subevent_id": "0",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning_process": "The reported 800 percent inflation rate highlights the government's failure to manage economic stability, contradicting their claims of worker welfare and economic prosperity.",
+                    "level_1_values": [
+                        {"value": "Have a stable society", "direction": "contradictory"},
+                        {"value": "Have a safe country", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Security: societal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "1",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning_process": "The 18.6 percent economic contraction underscores the government's inability to sustain economic growth, contradicting their narrative of economic success and stability.",
+                    "level_1_values": [
+                        {"value": "Have a stable society", "direction": "contradictory"},
+                        {"value": "Have success", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Security: societal", "Achievement"]
+                },
+                {
+                    "actor": "1-16189-3-1-1",
+                    "reasoning_process": "The economic contraction directly impacts citizens' ability to secure a comfortable life and maintain good health, exacerbating their vulnerability.",
+                    "level_1_values": [
+                        {"value": "Have a comfortable life", "direction": "contradictory"},
+                        {"value": "Have good health", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Security: personal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "2",
+            "actors": [
+                {
+                    "actor": "1-18169-3-1-0",
+                    "reasoning_process": "The sharpest contraction in 13 years and the worst inflation reading on record reflect the government's failure to manage the economy effectively, contradicting their claims of economic success.",
+                    "level_1_values": [
+                        {"value": "Have success", "direction": "contradictory"},
+                        {"value": "Be capable", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Achievement", "Security: societal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "3",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-1",
+                    "reasoning_process": "The severe product shortages and food lines illustrate the citizens' struggle to meet basic needs, highlighting the government's failure to ensure a safe and stable environment.",
+                    "level_1_values": [
+                        {"value": "Have good health", "direction": "contradictory"},
+                        {"value": "Have a comfortable life", "direction": "contradictory"},
+                        {"value": "Have a sense of belonging", "direction": "contradictory"}
+                    ],
+                    "level_1_values": [
+                        {"value": "Have a safe country", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Security: personal", "Security: societal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "4",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning_process": "The government's attribution of the economic crisis to an 'economic war' reflects a narrative of dominance and control, implying a lack of self-reflection and responsibility for their own policies.",
+                    "level_1_values": [
+                        {"value": "Have influence", "direction": "contradictory"},
+                        {"value": "Be responsible", "direction": "contradictory"},
+                        {"value": "Be just", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Power: dominance", "Universalism: concern"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "5",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning_process": "The central bank's decision to stop releasing economic indicators reflects a lack of transparency and accountability, undermining trust in the government and its economic management.",
+                    "level_1_values": [
+                        {"value": "Be honest", "direction": "contradictory"},
+                        {"value": "Have loyalty towards friends", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Benevolence: dependability"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "6",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning_process": "The 12.7 percent contraction in the oil sector, which is crucial for Venezuela's economy, indicates a failure in managing a key economic resource, contradicting claims of economic stability.",
+                    "level_1_values": [
+                        {"value": "Have wealth", "direction": "contradictory"},
+                        {"value": "Have success", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Power: resources", "Achievement"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "7",
+            "19.5 percent contraction in the non-oil sector highlights the government's inability to diversify and sustain the economy, further contradicting their claims of economic success.",
+                    "level_1_values": [
+                        {"value": "Have success", "direction": "contradictory"},
+                        {"value": "Be capable", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Achievement"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "8",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning_process": "The government's accusations against opposition-linked businesses reflect an attempt to deflect responsibility and undermine market mechanisms, contradicting values of honesty and justice.",
+                    "level_1_values": [
+                        {"value": "Be honest", "direction": "contradictory"},
+                        {"value": "Be just", "direction": "contradictory"}
+                    ],
+                    "level_ "level_2_values": ["Universalism: concern", "Benevolence: dependability"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "9",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning_process": "The government's claim that inflation is due to speculative price-gouging by unscrupulous capitalists contradicts the reality of systemic economic mismanagement, undermining trust in their economic policies.",
+                    "level_1_values": [
+                        {"value": "Be honest", "direction": "contradictory"},
+                        {"value": "Be responsible", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Benevolence: dependability"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "10",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning_process": "The government's claim that workers are better off due to minimum wage increases, despite the severe economic contraction, contradicts the evident suffering of citizens and reflects a lack of realistic economic planning.",
+                    "level_1_values": [
+                        {"value": "Have a comfortable life", "direction": "contradictory"},
+                        {"value": "Be responsible", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Security: personal", "Benevolence: dependability"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "11",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning "level_1_values": [
+                        {"value": "Have freedom of action", "direction": "contradictory"},
+                        {"value": "Have wealth", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Self-direction: action", "Power: resources"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "12",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-1",
+                    "reasoning_process": "Venezuelans crossing borders to buy groceries reflects their desperation to secure basic needs, highlighting the government's failure to ensure a stable and safe environment for its citizens.",
+                    "level_1_values": [
+                        {"value": "Have a comfortable life", "direction": "contradictory"},
+                        {"value": "Have good health", "direction": "contradictory"},
+                        {"value": "Have a safe country", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Security: personal", "Security: societal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "13",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning_process": "The high-yielding bonds due to investor concern about Venezuela's ability to service its debt reflect a lack of confidence in the government's economic management, contradicting their claims of financial stability.",
+                    "level_1_values": [
+                        {"value": "Have wealth", "direction": "contradictory"},
+                        {"value": "Be responsible", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Power: resources", "Benevolence: dependability"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "14",
+            "actors": [
+                {
+                    "actor": "1-16189-3-1-0",
+                    "reasoning_process": "Maduro's dismissal of default rumors, despite economic instability, reflects a lack of transparency and responsibility, undermining investor confidence and contradicting the value of honesty.",
+                    "level_1_values": [
+                        {"value": "Be honest", "direction": "contradictory"},
+                        "level_2_values": ["Benevolence: dependability"]
+                }
+            ]
+        }
+    ]
+}
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 32-2285-2-1 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 1-15227-1-1 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 1-15874-5-1 ---
+{
+    "guid": "1-15874-5-1",
+    "article_level_evaluation": [
+        {
+            "actor": "1-15874-5-1-0",
+            "reasoning_process": "The space science community and NASA mission proponents are demonstrating a strong commitment to scientific exploration and discovery. The Dragonfly mission proposal reflects a drive to understand the potential for life in extreme environments, which aligns with the value of intellectual curiosity and ambition. The mission's focus on exploring Titan's unique chemistry and habitability also highlights a dedication to advancing scientific knowledge and understanding. Additionally, the proposal's emphasis on leveraging Titan's thick atmosphere and low gravity to enable extensive exploration showcases a forward-thinking and innovative approach, reflecting ambition and capability. The involvement in NASA's New Frontiers program indicates a structured and responsible approach to funding and executing scientific missions, aligning with dependability and the pursuit of success. The presentation of the concept at a scientific conference underscores the importance of sharing knowledge and fostering collaboration within the scientific community.",
+            "level_1_values": [
+                {"value": "Be curious", "direction": "aligned"},
+                {"value": "Be ambitious", "direction": "aligned"},
+                {"value": "Be capable", "direction": "aligned"},
+                {"value": "Be responsible", "direction": "aligned"},
+                {"value": "Have success", "direction": "aligned"},
+                {"value": "Be logical", "direction": "aligned"},
+                {"value": "Be broadminded", "direction": "aligned"}
+            ],
+            "level_2_values": [
+                "Self-direction: thought",
+                "Achievement",
+                "Benevolence: dependability",
+                "Universalism: objectivity"
+            ]
+        }
+    ],
+    "subevent_level_evaluation": [
+        {
+            "subevent_id": "0",
+            "actors": [
+                {
+                    "actor": "1-15874-5-1-0",
+                    "reasoning_process": "The proposal of a relocatable lander to explore Titan demonstrates a forward-thinking approach to scientific exploration, emphasizing curiosity and innovation.",
+                    "level_1_values": [
+                        {"value": "Be curious", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Self-direction: thought"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "1",
+            "actors": [
+                {
+                    "actor": "1-15874-5-1-0",
+                    "reasoning_process": "The Dragonfly lander's ability to investigate potentially habitable sites with methane and ethane highlights the ambition to explore and understand life's potential in extreme environments, reflecting intellectual curiosity and capability.",
+                    "level_1_values": [
+                        {"value": "Be curious", "direction": "aligned"},
+                        {"value": "Be capable", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Self-direction: thought",
+                        "Achievement"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "2",
+            "actors": [
+                {
+                    "actor": "1-15874-5-1-0",
+                    "reasoning beauty and harmony with nature, as well as the potential for scientific discovery that could contribute to humanity's understanding of life beyond Earth.",
+                    "level_1_values": [
+                        {"value": "Have harmony with nature", "direction": "aligned"},
+                        {"value": "Be capable", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: nature",
+                        "Achievement"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "3",
+            "actors": [
+                {
+                    "actor": "1-15874-5-1-0",
+                    "reasoning_process": "Elizabeth Turtle's statement about Titan being a rich place to explore in situ emphasizes the intellectual curiosity and ambition to delve into unexplored scientific frontiers.",
+                    "level_1_values": [
+                        {"value": "Be curious", "direction": "aligned"},
+                        {"value": "Be ambitious", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Self-direction: thought",
+                        "Achievement"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "4",
+            "actors": [
+                {
+                    "actor": "1-15784-5-1-0",
+                    "reasoning_process": "The leadership of Elizabeth Turtle and the team in proposing an in-depth exploration of Titan through NASA's New Frontiers program reflects responsibility, ambition, and a structured approach to scientific missions, aligning with dependability and success.",
+                    "level_1_values": [
+                        {"value": "Be responsible", "direction": "aligned"},
+                        {"value": "Be ambitious", "direction": "aligned"},
+                        {"value": "Have success", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Benevolence: dependability",
+                        "Achievement"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "5",
+            "actors": [
+                {
+                    "actor": "1-15874-5-1-0",
+                    "reasoning_process": "Presenting the Dragonfly concept at a scientific conference demonstrates a commitment to sharing knowledge and fostering collaboration, reflecting broadmindedness and logical thinking.",
+                    "level_1_values": [
+                        {"value": "Be broadminded", "direction": "aligned"},
+                        {"value": "Be logical", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: tolerance",
+                        "Universalism: objectivity"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "6",
+            "actors": [
+                {
+                    "actor": "1-15874-5-1-0",
+                    "reasoning_process": "The exploration of Titan's chemistry for potential life reflects a broadminded and objective approach to understanding the universe, emphasizing curiosity and intellectual capability.",
+                    "level_1 values": [
+                        {"value": "Be curious", "direction": "aligned"},
+                        {"value": "Be capable", "direction": "aligned"},
+                        {"value": "Be broadminded", "direction": "aligned"}
+                    ],
+                    "level_1_values": [
+                        {"value": "Be curious", "direction": "aligned"},
+                        {"value": "Be capable", "direction": "aligned"},
+                        {"value": "Be broadminded", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Self-direction: thought",
+                        "Achievement",
+                        "Universalism: tolerance"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "7",
+            "actors": [
+                {
+                    "actor": "1-15874-5-1-0",
+                    "reasoning_process": "Elizabeth Turtle's explanation that Titan's thick atmosphere enables the Dragonfly mission underscores the capability and logical planning involved in leveraging environmental conditions for scientific exploration, reflecting ambition and objectivity.",
+                    "level_1_values": [
+                        {"value": "Be capable", "direction": "aligned"},
+                        "Be logical", "direction": "aligned"
+                    ],
+                    "level_2_values": [
+                        "Achievement",
+                        "Universalism: objectivity"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 9-20780-1-1 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 9-21250-3-t ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 9-21858-2-t ---
+{
+    "guid": "9-21858-2-t",
+    "article_level_evaluation": [
+        {
+            "actor": "9-21858-2-t-0",
+            "reasoning_process": "Religious institutions and leaders are navigating the crisis by adapting traditional practices to mitigate health risks. The Vatican's decision to livestream masses and Pope Francis's encouragement to visit the sick and accompany medical staff demonstrates a balance between maintaining spiritual connection and addressing public health concerns. The suspension of physical contact practices in many churches reflects a responsible and precautionary approach. However, the Greek Orthodox Church's refusal to suspend certain rituals contradicts scientific advice, potentially endangering congregants. Additionally, the postponement of events like nagar kirtans for Vaisakhi and the advice to avoid large gatherings for Holi show a commitment to safety and community well-being. The refusal to cancel or curtail gatherings in some cases, despite clear health risks, highlights a contradictory stance towards security and health.",
+            "level_1_values": [
+                {"value": "Be responsible", "direction": "aligned"},
+                {"value": "Have good health", "direction": "aligned"},
+                {"value": "Be just", "direction": "contradictory"},
+                {"value": "Be respecting traditions", "direction": "contradictory"},
+                {"value": "Have a sense of belonging", "direction": "aligned"},
+                {"value": "Be helpful", "direction": "aligned"},
+                {"value": "Be broadminded", "direction": "aligned"},
+                {"value": "Have a safe country", "direction": "contradictory"}
+            ],
+            "level_2_values": [
+                "Benevolence: dependability",
+                "Security: personal",
+                "Tradition",
+                "Universalism: concern",
+                "Universalism: tolerance"
+            ]
+        },
+        {
+            "actor": "9-21858-2-t-1",
+            "actor": "9-21858-2-t-1",
+            "reasoning_process": "Governments and public authorities are implementing measures to control the spread of the virus, such as closing public spaces, mandating quarantines, and advising against large gatherings. These actions reflect a commitment to ensuring the safety and health of their populations. The measures also demonstrate a concern for societal stability and adherence to scientific advice. However, the potential for these measures to disrupt religious and cultural practices highlights a tension between public health and cultural traditions.",
+            "level_1_values": [
+                {"value": "Have a safe country", "direction": "aligned"},
+                {"value": "Have good health", "direction": "aligned"},
+                {"value": "Have a stable society", "direction": "aligned"},
+                {"value": "Be logical", "direction": "aligned"},
+                {"value": "Be respecting traditions", "direction": "contradictory"}
+            ],
+            "level_2_values": [
+                "Security: societal",
+                "Security: personal",
+                "Universalism: objectivity",
+                "Tradition"
+            ]
+        }
+    ],
+    "subevent_level_evaluation": [
+        {
+            "subevent_id": "0",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "The potential cancellation or curtailment of religious festivals due to the coronavirus crisis reflects a proactive approach to prioritize health and safety over traditional practices.",
+                    "level_1_values": [
+                        {"value": "Have good health", "direction": "aligned"},
+                        {"value": "Have a safe country", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Security: personal", "Security: societal"]
+                },
+                {
+                    "actor": "9-21858-2-t-1",
+                    "reasoning_process": "Government actions to prevent large gatherings align with public health measures to ensure safety and stability.",
+                    "level_1_values": [
+                        {"value": "Have a safe country", "direction": "aligned"},
+                        {"value": "Have a stable society", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Security: societal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "1",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "The scheduling of major religious festivals highlights the importance of these events to faith communities, reflecting a sense of belonging and tradition.",
+                    "level_1_values": [
+                        {"value": "Have a sense of belonging", "direction": "aligned"},
+                        {"value": "Be respecting traditions", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Security: personal", "Tradition"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "2",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "The uncertainty around traditional Easter celebrations due to public health restrictions shows a tension between maintaining tradition and ensuring safety.",
+                    "level_1_values": [
+                        {"value": "Have a safe country", "direction": "contradictory"},
+                        {"value": "Be respecting traditions", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Security: societal", "Tradition"]
+                },
+                {
+                    "actor": "9-21858-2-t-1",
+                    "reasoning_process": "Closing St Peter's Square and cancelling public masses align with public health measures to mitigate virus spread.",
+                    "level_1_values": [
+                        {"value": "Have a safe country", "direction": "aligned"},
+                        {"value": "Have good health", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Security: societal", "Security: personal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "3",
+            "actors": [
+                {
+                    "actor": "9-21850-2-t-0",
+                    "reasoning_process": "Livestreaming masses and the Angelus demonstrates an effort to maintain spiritual connection and community during restrictions, reflecting a broadminded approach to adapt to new circumstances.",
+                    "level_1_values": [
+                        {"value": "Have a sense of belonging", "direction": "aligned"},
+                        {"value": "Be broadminded", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Security: personal", "Universalism: tolerance"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "4",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "Pope Francis's encouragement to visit the sick and accompany medical staff shows a commitment to benevolence and helping others, despite movement restrictions.",
+                    "level_1_values": [
+                        {"value": "Be helpful", "direction": "aligned"},
+                        {"value": "Have good health", "direction": "aligned"}
+                    ],
+                    "level_1_values": [
+                        {"value": "Be responsible", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Benevolence: caring", "Security: personal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "5",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoninglivestreaming masses and the Angelus demonstrates an effort to maintain spiritual connection and community during restrictions, reflecting a broadminded approach to adapt to new circumstances.",
+                    "level_1_values": [
+                        {"value": "Be responsible", "direction": "aligned"},
+                        {"value": "Have good health", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Benevolence: dependability", "Security: personal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "6",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "The Church of England's advice to avoid certain physical contact practices reflects a responsible and precautionary approach to public health.",
+                    "level_1_values": [
+                        {"value": "Be responsible", "direction": "aligned"},
+                        {"value": "Have good health", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Benevolence: dependability", "Security: personal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "7",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "The Greek Orthodox Church's refusal to suspend certain rituals despite scientific advice contradicts the value of public health and safety, potentially endangering congregants.",
+                    "level_1_values": [
+                        {"value": "Have good health", "direction": "contradictory"},
+                        {"value": "Be logical", "direction": "contradictory"}
+                    ],
+                    "level_2_values": ["Security: personal", "Universalism: objectivity"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "8",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "Suspension of Friday prayers across the Middle East reflects a proactive approach to mitigate health risks during Ramadan preparations.",
+                    "level_1_values": [
+                        {"value": "Have good health", "direction": "aligned"},
+                        {"value": "Have a safe country", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Security: personal", "Security: societal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "9",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-1",
+                    "reasoning_process": "The ban on overseas visitors to Mecca and Medina by Saudi Arabia aligns with public health measures to prevent virus spread and protect pilgrims.",
+                    "level_1_values": [
+                        {"value": "Have good health", "direction": "aligned"},
+                        {"value": "Have a safe country", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Security: personal", "Security: societal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "10",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "The Muslim Council of Britain's warning that restrictions on gatherings may change reflects a cautious approach to public health, though it initially refrained from advising restrictions.",
+                    "level_1_values": [
+                        {"value": "Be responsible", "direction": "aligned"},
+                        {"value": "Have good health", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Benevolence: dependability", "Security: personal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "11",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-1",
+                    "reasoning_process": "Israel's quarantine measures for arrivals from abroad reflect a commitment to public health and safety, despite potential cultural and religious disruptions.",
+                    "level_1_values": [
+                        {"value": "Have good health", "direction": "aligned"},
+                        {"value": "Have a safe country", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Security: personal", "Security: societal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "12",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "The Conference of European Rabbis and Israel's chief rabbi advising against certain physical contact practices reflect a responsible approach to public health.",
+                    "level_1_values": [
+                        {"value": "Be responsible", "direction": "aligned"},
+                        {"value": "Have good health", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Benevolence: dependability", "Security: personal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "13",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "Cancelling communal events and livestreaming services in US synagogues reflect a proactive approach to public health and community safety.",
+                    "level_1_values": [
+                        {"value": "Be responsible", "direction": "aligned"},
+                        {"value": "Have good health", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Benevolence: dependability", "Security: personal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "14",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "Hindus wearing face masks during Holi celebrations demonstrate a proactive approach to health safety, despite the cultural significance of the festival.",
+                    "level_1_values": [
+                        {"value": "Have good health", "direction": "aligned"},
+                        {"value": "Be responsible", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Security: personal", "Benevolence: dependability"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "15",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-1",
+                    "reasoning_process": "Prime Minister Modi's decision to avoid public Holi celebrations and advise against large gatherings reflects a commitment to public health and safety.",
+                    "level_1_values": [
+                        {"value": "Have good health", "direction": "aligned"},
+                        "value": "Have a safe country", "direction": "aligned"
+                    ],
+                    "level_2_values": ["Security: personal", "Security: societal"]
+                }
+            ]
+        },
+        {
+            "subevent_id": "16",
+            "actors": [
+                {
+                    "actor": "9-21858-2-t-0",
+                    "reasoning_process": "Postponing nagar kirtans for Vaisakhi and delaying the Vaisakhi nagar kirtan in Southall reflect a responsible approach to public health and community safety.",
+                    "level_1_values": [
+                        {"value": "Be responsible", "direction": "aligned"},
+                        {"value": "Have good health", "direction": "aligned"}
+                    ],
+                    "level_2_values": ["Benevolence: dependability", "Security: personal"]
+                }
+            ]
+        }
+    ]
+}
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 35-5391-7-1 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 17-27606-1-3 ---
+{
+    "guid": "17-27606-1-3",
+    "article_level_evaluation": [
+        {
+            "actor": "17-27606-1-3-0",
+            "reasoning_process": "Chris Mosier and his supporters actively challenge systemic barriers and advocate for equality in sports, emphasizing the importance of inclusivity and acceptance. His journey from personal struggle to becoming a pioneer in transgender sports highlights his ambition and dedication to breaking barriers. Mosier's efforts to normalize transgender participation in sports reflect his commitment to fostering a world at peace and equality. His advocacy also underscores his loyalty towards friends and community by supporting LGBT athletes and promoting a sense of belonging for them. Mosier's actions also demonstrate his intellectual curiosity and courage in addressing societal norms and pushing for change.",
+            "level_1_values": [
+                {"value": "Be just", "direction": "aligned"},
+                {"value": "Have equality", "direction": "aligned"},
+                {"value": "Be ambitious", "direction": "aligned"},
+                {"value": "Be courageous", "direction": "aligned"},
+                {"value": "Have loyalty towards friends", "direction": "aligned"},
+                {"value": "Have a sense of belonging", "direction": "aligned"},
+                {"value": "Be intellectual", "direction": "aligned"},
+                {"value": "Have a world at peace", "direction": "aligned"},
+                {"value": "Be helpful", "direction": "aligned"}
+            ],
+            "level_2_values": [
+                "Universalism: concern",
+                "Benevolence: dependability",
+                "Security: personal",
+                "Achievement",
+                "Universalism: tolerance"
+            ]
+        },
+        {
+            "actor": "17-27606-1-3-1",
+            "reasoning_process": "The traditionalists and opponents exhibit contradictory values by opposing the inclusion of transgender athletes, which undermines equality and justice. Their actions and statements reflect a lack of broadmindedness and a resistance to accepting others, particularly in the context of sports. Their restrictive laws and public commentary also contradict the values of a stable society and a safe country by fostering an environment of exclusion and discrimination. Their opposition to the IOC's policy and the perceived unfair advantage of transgender athletes also contradicts the value of being logical and objective.",
+            "level_1_values": [
+                {"value": "Have equality", "direction": "contradictory"},
+                {"value": "Be broadminded", "direction": "contradictory"},
+                {"value": "Have the wisdom to accept others", "direction": "contradictory"},
+                {"value": "Have a stable society", "direction": "contradictory"},
+                {"value": "Have a safe country", "direction": "contradicted"},
+                {"value": "Be logical", "direction": "contradictory"}
+            ],
+            "level_2_values": [
+                "Universalism: concern",
+                "Universalism: tolerance",
+                "Security: societal"
+            ]
+        }
+    ],
+    "subevent_level_evaluation": [
+        {
+            "subevent_id": "0",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Chris Mosier's childhood experience of feeling confident and valued purely on athletic ability highlights his early sense of belonging and equality in sports, which is a foundational value for his later advocacy.",
+                    "level_1_values": [
+                        {"value": "Have a sense of belonging", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Security: personal"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "1",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning "process": "Qualifying for Team USA and becoming the first openly transgender man on a U.S. National Team demonstrates Mosier's ambition, courage, and commitment to breaking barriers. This achievement also highlights his intellectual prowess and dedication to achieving success.",
+                    "level_1_values": [
+                        {"value": "Be ambitious", "direction": "aligned"},
+                        {"value": "Be courageous", "direction": "aligned"},
+                        {"value": "Have success", "direction": "aligned"},
+                        {"value": "Be capable", "direction": "aligned"},
+                        {"value": "Be intellectual", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Achievement",
+                        "Universalism: concern"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "2",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "The denial of access to locker rooms and pools reflects the systemic discrimination Mosier faced, highlighting the need for justice and equality. This experience also underscores the importance of having a good reputation and respecting traditions of inclusivity.",
+                    "level_1_values": [
+                        {"value": "Be just", "direction": "contradictory"},
+                        {"value": "Have equality", "direction": "contradictory"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: concern"
+                    ]
+                },
+                {
+                    "actor": "17-27606-1-3-1",
+                    "reasoning_process": "The denial of access to facilities to transgender athletes reflects the actions of traditionalists and opponents, who contradict the values of equality and justice by enforcing exclusionary practices.",
+                    "level_1_values": [
+                        {"value": "Have equality", "direction": "contradictory"},
+                        {"value": "Be just", "direction": "contradictory"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: concern"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "3",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-1",
+                    "reasoning_process": "The HB2 law in North Carolina, which denied Chris Mosier access to the restroom, reflects the actions of traditionalists and opponents who contradict the values of equality and justice. This law also undermines the value of a safe country by creating discriminatory environments.",
+                    "level_1_values": [
+                        {"value": "Have equality", "direction": "contradictory"},
+                        {"value": "Have a safe country", "direction": "contradictory"},
+                        {"value": "Be just", "direction": "contradictory"}
+                    ],
+                    "level_1_values": [
+                        {"value": "Have a safe country", "direction": "contradictory"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: concern",
+                        "Security: societal"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "4",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Meeting his wife and understanding his gender identity helped Chris Mosier clarify his personal identity and values, fostering a sense of belonging and self-acceptance. This experience also highlights his courage in confronting and accepting his true self.",
+                    "level_1_values": [
+                        {"value": "Have a sense of belonging", "direction": "aligned"},
+                        {"value": "Be courageous", "direction": "aligned"},
+                        {"value": "Have life accepted as is", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Security: personal",
+                        "Humility"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "5",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Chris Mosier's transition and subsequent participation in men's triathlons and duathlons demonstrate his independence and freedom of action. His actions also reflect his ambition and capability to achieve success in a traditionally male-dominated sport.",
+                    "level_1_values": [
+                        {"value": "Be independent", "direction": "aligned"},
+                        {"value": "Have freedom of action", "direction": "aligned"},
+                        {"value": "Be ambitious", "direction": "aligned"},
+                        {"value": "Be capable", "direction": "aligned"},
+                        {"value": "Have success", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Self-direction: action",
+                        "Achievement"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "6",
+            "actors": [
+                {
+                    "actor": "17-2760 "process": "Chris Mosier's inspiration from athletes like Tommie Smith highlights his intellectual curiosity and ambition to provoke social change. This inspiration also reflects his desire to be a role model and to have influence in the sports community.",
+                    "level_1_values": [
+                        {"value": "Be curious", "direction": "aligned"},
+                        {"value": "Be ambitious", "direction": "aligned"},
+                        {"value": "Have influence", "direction": "aligned"},
+                        {"value": "Be intellectual", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Self-direction: thought",
+                        "Achievement",
+                        "Power: dominance"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "7",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "The updated IOC regulations reflect the efforts of advocates to create a more inclusive and just environment for transgender athletes. This change highlights the importance of equality and justice in sports and society.",
+                    "level_1_values": [
+                        {"value": "Be just", "direction": "aligned"},
+                        {"value": "Have equality", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: concern"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "8",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Mosier's realization that his success alone was not enough to break barriers for all transgender athletes highlights his ambition and commitment to broader social change. This also reflects his loyalty towards the community and his dedication to fostering a sense of belonging for all.",
+                    "level_1_values": [
+                        {"value": "Be ambitious", "direction": "aligned"},
+                        {"value": "Have loyalty towards friends", "direction": "aligned"},
+                        {"value": "Have a sense of belonging", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Achievement",
+                        "Benevolence: dependability"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "9",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Chris Mosier's ongoing advocacy for transgender athletes reflects his commitment to equality, justice, and a world at peace. His efforts to normalize participation and acceptance demonstrate his courage and intellectual curiosity in addressing societal norms.",
+                    "level_1_values": [
+                        {"value": "Be just", "direction": "aligned"},
+                        {"value": "Have equality", "direction": "aligned"},
+                        {"value": "Have a world at peace", "direction": "aligned"},
+                        {"value": "Be courageous", "direction": "aligned"},
+                        {"value": "Be intellectual", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: concern",
+                        "Universalism: tolerance"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "6",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-1",
+                    "reasoning_process": "The critical athletes and opponents' statements and actions against transgender athletes reflect their lack of broadmindedness and wisdom to accept others. Their opposition contradicts the values of equality and justice.",
+                    "level_1_values": [
+                        {"value": "Be broadminded", "direction": "contradictory"},
+                        {"value": "Have the wisdom to accept others", "direction": "contradictory"},
+                        {"value": "Have equality", "direction": "contradictory"},
+                        {"value": "Be just", "direction": "contradictory"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: tolerance",
+                        "Universalism: concern"
+                    ]
+                }
+            ]
+        }
+        ]
+    }
+}{
+    "guid": "17-27606-1-3",
+    "article_level_evaluation": [
+        {
+            "actor": "17-27606-1-3-0",
+            "reasoning_process": "Chris Mosier and his supporters actively challenge systemic barriers and advocate for equality in sports, emphasizing inclusivity and acceptance. Mosier’s journey from personal struggle to becoming a pioneer in transgender sports highlights his ambition, courage, and intellectual curiosity. His efforts to normalize transgender participation in sports reflect his commitment to fostering equality, justice, and a world at peace. Mosier’s advocacy also demonstrates his loyalty towards LGBT athletes and his dedication to creating a sense of belonging for them. His actions also show his independence and freedom of action in pursuing his goals and breaking societal barriers. Additionally, his intellectual curiosity and courage in addressing societal norms and pushing for change are evident throughout his journey.",
+            "level_1_values": [
+                {"value": "Be just", "direction": "aligned"},
+                {"value": "Have equality", "direction": "aligned"},
+                {"value": "Be ambitious", "direction": "aligned"},
+                {"value": "Be courageous", "direction": "aligned"},
+                {"value": "Be intellectual", "direction": "aligned"},
+                {"value": "Have loyalty towards friends", "direction": "aligned"},
+                {"value": "Have a sense of belonging", "direction": "aligned"},
+                {"value": "Be independent", "direction": "aligned"},
+                {"value": "Have freedom of action", "direction": "aligned"},
+                {"value": "Have a world at peace", "direction": "aligned"},
+                {"value": "Be helpful", "direction": "aligned"},
+                {"value": "Be curious", "direction": "aligned"}
+            ],
+            "level_2_values": [
+                "Universalism: concern",
+                "Benevolence: dependability",
+                "Security: personal",
+                "Achievement",
+                "Self-direction: action",
+                "Self-direction: thought",
+                "Universalism: tolerance"
+            ]
+        },
+        {
+            "actor": "17-27606-1-3-1",
+            "reasoning_process": "The traditionalists and opponents exhibit contradictory values by opposing the inclusion of transgender athletes, which undermines equality, justice, and societal stability. Their restrictive laws, discriminatory practices, and public commentary reflect a lack of broadmindedness, wisdom to accept others, and logical reasoning. Their actions contradict the values of a safe and stable society, as well as the principles of fairness and objectivity.",
+            "level_1_values": [
+                {"value": "Have equality", "direction": "contradictory"},
+                {"value": "Be broadminded", "direction": "contradictory"},
+                {"value": "Have the wisdom to accept others", "direction": "contradictory"},
+                {"value": "Have a stable society", "direction": "contradictory"},
+                {"value": "Have a safe country", "direction": "contradictory"},
+                {"value": "Be just", "direction": "contradictory"},
+                {"value": "Be logical", "direction": "contradictory"}
+            ],
+            "level_2_values": [
+                "Universalism: concern",
+                "Universalism: tolerance",
+                "Security: societal",
+                "Universalism: objectivity"
+            ]
+        }
+    ],
+    "subevent_level_evaluation": [
+        {
+            "subevent_id": "0",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Chris Mosier’s childhood experience of feeling valued purely on athletic ability highlights his early sense of belonging and equality in sports, which is foundational for his later advocacy.",
+                    "level_1_values": [
+                        {"value": "Have a sense of belonging", "direction": "aligned"},
+                        {"value": "Have equality", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Security: personal",
+                        "Universalism: concern"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "1",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Qualifying for Team USA and becoming the first openly transgender man on a U.S. National Team demonstrates Mosier’s ambition, courage, and commitment to breaking barriers. His success also reflects his intellectual prowess and dedication to achieving success in a traditionally male-dominated field.",
+                    "level_1_values": [
+                        {"value": "Be ambitious", "direction": "aligned"},
+                        {"value": "Be courageous", "direction": "aligned"},
+                        {"value": "Have success", "direction": "aligned"},
+                        {"value": "Be capable", "direction": "aligned"},
+                        {"value": "Be intellectual", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Achievement",
+                        "Universalism: concern"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "2",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "The denial of access to locker rooms and pools reflects systemic discrimination Mosier faced, highlighting the need for justice and equality. This experience underscores the importance of having a good reputation for inclusivity and respecting traditions of fairness.",
+                    "level_1_values": [
+                        {"value": "Be just", "direction": "contradictory"},
+                        {"value": "Have equality", "direction": "contradictory"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: concern"
+                    ]
+                },
+                {
+                    "actor": "17-27606-1-3-1",
+                    "reasoning_process": "The denial of access to facilities to transgender athletes reflects the actions of traditionalists and opponents, who contradict the values of equality and justice by enforcing exclusionary practices.",
+                    "level_1_values": [
+                        {"value": "Have equality", "direction": "contradictory"},
+                        {"value": "Be just", "direction": "contradictory"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: concern"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "3",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-1",
+                    "reasoning_process": "The HB2 law in North Carolina, which denied Chris Mosier access to the restroom, reflects the actions of traditionalists and opponents who contradict the values of equality, justice, and a safe country by creating discriminatory environments.",
+                    "level_1_values": [
+                        {"value": "Have equality", "direction": "contradictory"},
+                        {"value": "Be just", "direction": "contradictory"},
+                        {"value": "Have a safe country", "direction": "contradictory"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: concern",
+                        "Security: societal"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "4",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Meeting his wife and understanding his gender identity helped Chris Mosier clarify his personal identity and values, fostering a sense of belonging and self-acceptance. This experience also highlights his courage in confronting and accepting his true self.",
+                    "level_1_values": [
+                        {"value": "Have a sense of belonging", "direction": "aligned"},
+                        {"value": "Be courageous", "direction": "aligned"},
+                        {"value": "Have life accepted as is", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Security: personal",
+                        "Humility"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "5",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Chris Mosier’s transition and participation in men's triathlons and duathlons demonstrate his independence, freedom of action, and ambition. His actions also reflect his capability and success in achieving his goals in a traditionally male-dominated sport.",
+                    "level_1_values": [
+                        {"value": "Be independent", "direction": "aligned"},
+                        {"value": "Have freedom of action", "direction": "aligned"},
+                        {"value": "Be ambitious", "direction": "aligned"},
+                        {"value": "Be capable", "direction": "aligned"},
+                        {"value": "Have success", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Self-direction: action",
+                        "Achievement"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "6",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Chris Mosier’s inspiration from athletes like Tommie Smith highlights his intellectual curiosity and ambition to provoke social change. This inspiration also reflects his desire to be a role model and to have influence in the sports community.",
+                    "level_1_values": [
+                        {"value": "Be curious", "direction": "aligned"},
+                        {"value": "Be ambitious", "direction": "aligned"},
+                        {"value": "Have influence", "direction": "aligned"},
+                        {"value": "Be intellectual", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Self-direction: thought",
+                        "Achievement",
+                        "Power: dominance"
+                    ]
+                },
+                {
+                    "actor": "17-27606-1-3-1",
+                    "reasoning_process": "The critical athletes and opponents' statements and actions against transgender athletes reflect their lack of broadmindedness and wisdom to accept others. Their opposition contradicts the values of equality, justice, and logical reasoning.",
+                    "level_1_values": [
+                        {"value": "Be broadminded", "direction": "contradictory"},
+                        {"value": "Have the wisdom to accept others", "direction": "contradictory"},
+                        {"value": "Have equality", "direction": "contradictory"},
+                        {"value": "Be just", "direction": "contradictory"},
+                        {"value": "Be logical", "direction": "contradictory"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: tolerance",
+                        "Universalism: concern",
+                        "Universalism: objectivity"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "7",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "The updated IOC regulations reflect the efforts of advocates to create a more inclusive and just environment for transgender athletes. This change highlights the importance of equality and justice in sports and society.",
+                    "level_1_values": [
+                        {"value": "Be just", "direction": "aligned"},
+                        {"value": "Have equality", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: concern"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "8",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Mosier’s realization that his success alone was not enough to break barriers for all transgender athletes highlights his ambition and commitment to broader social change. This reflects his loyalty towards the community and dedication to fostering a sense of belonging for all.",
+                    "level_1_values": [
+                        {"value": "Be ambitious", "direction": "aligned"},
+                        "value": "Have loyalty towards friends", "direction": "aligned"},
+                        {"value": "Have a sense of belonging", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Achievement",
+                        "Benevolence: dependability"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "9",
+            "actors": [
+                {
+                    "actor": "17-27606-1-3-0",
+                    "reasoning_process": "Chris Mosier’s ongoing advocacy for transgender athletes reflects his commitment to equality, justice, and a world at peace. His efforts to normalize participation and acceptance demonstrate his courage and intellectual curiosity in addressing societal norms.",
+                    "level_1_values": [
+                        {"value": "Be just", "direction": "aligned"},
+                        {"value": "Have equality", "direction": "aligned"},
+                        {"value": "Have a world at peace", "direction": "aligned"},
+                        {"value": "Be courageous", "direction": "aligned"},
+                        {"value": "Be intellectual", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: concern",
+                        "Universalism: tolerance"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 1-152956-1-4 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 9-20505-4-1 ---
+```
+Error: Parsed result is not a dictionary.
+
+--- Failed GUID: 1-15313-3-t ---
+{
+    "guid": "1-15353-3-t",
+    "article_level_evaluation": [
+        {
+            "actor": "1-15313-3-t-0",
+            "reasoning_process": "The scientific community's actions and statements emphasize a commitment to evidence-based reasoning and transparency in their analysis of the virus's origin. Their collective effort to publish a pre-print review and their insistence on the zoonotic origin of SARS-CoV-2 demonstrate a strong dedication to intellectual rigor and the pursuit of truth. They also show a desire to be responsible and dependable by calling for more openness from the Chinese government regarding the wildlife trade. Their call for reason and science in the investigation highlights their commitment to objectivity and logical thinking.",
+            "level_1_values": [
+                {"value": "Be capable", "direction": "aligned"},
+                {"value": "Be intellectual", "direction": "aligned"},
+                {"value": "Be responsible", "direction": "aligned"},
+                {"value": "Be logical", "direction": "aligned"},
+                {"value": "Have an objective view", "direction": "aligned"},
+                {"value": "Be just", "direction": "aligned"},
+                {"value": "Be broadminded", "direction": "aligned"},
+                {"value": "Be helpful", "direction": "aligned"}
+            ],
+            "level_2_values": [
+                "Achievement",
+                "Universalism: objectivity",
+                "Benevolence: dependability",
+                "Universalism: concern",
+                "Universalism: tolerance"
+            ]
+        },
+        {
+            "actor": "1-15313-3-t-1",
+            "actor": "1-15313-3-t-1",
+            "reasoning_process": "The Chinese Government and Market Authorities are indirectly implicated in the loss of evidence due to the clearing and sanitizing of animal markets, which removed potential sources of the virus. This action contradicts the value of having an objective view and being responsible, as it obstructs scientific inquiry and transparency. Their lack of openness regarding the wildlife trade and the disappearance of evidence also contradicts the values of being honest and having a sense of belonging to the global scientific community.",
+            "level_1_values": [
+                {"value": "Be honest", "direction": "contradictory"},
+                {"value": "Be responsible", "direction": "contradictory"},
+                "Be logical",
+                {"value": "Have an objective view", "direction": "contradictory"},
+                {"value": "Have a sense of belonging", "direction": "contradictory"}
+            ],
+            "level_2_values": [
+                "Benevolence: dependability",
+                "Universalism: objectivity",
+                "Security: personal"
+            ]
+        },
+        {
+            "actor": "1-15133-3-t-2",
+            "reasoning_process": "The World Health Organization's report and efforts to find the origins of the virus reflect their commitment to understanding the pandemic's origins through scientific inquiry. Their alignment with the scientific community's findings and their call for evidence-based approaches demonstrate their dedication to being logical, objective, and responsible. Their actions also reflect a desire to have a world at peace and to be just in their pursuit of global health.",
+            "level_1_values": [
+                {"value": "Be logical", "direction": "aligned"},
+                {"value": "Have an objective view", "direction": "aligned"},
+                {"value": "Be responsible", "direction": "aligned"},
+                {"value": "Be just", "direction": "aligned"},
+                {"value": "Have a world at peace", "direction": "aligned"}
+            ],
+            "actor": "1-15313-3-t-2",
+            "level_2_values": [
+                "Universalism: objectivity",
+                "Benevolence: dependability",
+                "Universalism: concern"
+            ]
+        }
+    ],
+    "subevent_level_evaluation": [
+        {
+            "subevent_id": "0",
+            "actors": [
+                {
+                    "actor": "1-15313-3-t-0",
+                    "reasoning_process": "The statement that the virus almost certainly originated from an animal emphasizes the experts' commitment to evidence-based conclusions and intellectual rigor.",
+                    "level_1_values": [
+                        {"value": "Be intellectual", "direction": "aligned"},
+                        {"value": "Be capable", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Achievement"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "1",
+            "actors": [
+                {
+                    "actor": "1-15313-3-t-0",
+                    "reasoning theories about a lab leak are based on coincidence, not hard evidence, underscores their commitment to objectivity and logical reasoning.",
+                    "level_1_values": [
+                        {"value": "Be logical", "direction": "aligned"},
+                        {"value": "Have an objective view", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: objectivity"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "2",
+            "actors": [
+                {
+                    "actor": "1-150313-3-t-0",
+                    "reasoning_process": "The publication of a pre-print review supporting a zoonotic origin demonstrates their dedication to transparency and the pursuit of truth.",
+                    "level_1_values": [
+                        {"value": "Be honest", "direction": "aligned"},
+                        {"value": "Be responsible", "direction": "aligned"}
+                    ],
+                    "level_1_values": [
+                        {"value": "Be capable", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Benevolence: dependability",
+                        "Achievement"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "3",
+            "actors": [
+                {
+                    "actor": "1-15313-3-t-0",
+                    "reasoning_process": "The assertion that there is no evidence of a lab origin and no connection to the Wuhan Institute of Virology highlights their commitment to being logical and objective.",
+                    "level_1_values": [
+                        {"value": "Be logical", "direction": "aligned"},
+                        {"value": "Have an objective view", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: objectivity"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "4",
+            "actors": [
+                {
+                    "actor": "1-15313-3-t-0",
+                    "reasoning_process": "The explanation that Wuhan's status reflects the natural spread of pathogens in populated areas shows their intellectual understanding and broadmindedness.",
+                    "level_1_values": [
+                        {"value": "Be intellectual", "direction": "aligned"},
+                        {"value": "Be broadminded", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Achievement",
+                        "Universalism: tolerance"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "5",
+            "actors": [
+                {
+                    "actor": "1-15313-3-t-1",
+                    "reasoning_process": "The clearing and sanitizing of animal markets, which removed potential evidence, contradicts the values of being responsible and honest, as it obstructs scientific inquiry.",
+                    "level_1_values": [
+                        {"value": "Be responsible", "direction": "contradictory"},
+                        {"value": "Be honest", "direction": "contradory"}
+                    ],
+                    "level_1_values": [
+                        {"value": "Have an objective view", "direction": "contradictory"}
+                    ],
+                    "level_2_values": [
+                        "Benevolence: dependability"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "6",
+            "actors": [
+                {
+                    "actor": "1-15313-3-t-2",
+                    "reasoning_process": "The WHO's report supporting the zoonotic origin of the virus demonstrates their commitment to logical and objective scientific inquiry.",
+                    "level_1_values": [
+                        {"value": "Be logical", "direction": "aligned"},
+                        "Have an objective view",
+                        {"value": "Be responsible", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: objectivity",
+                        "Benevolence: dependability"
+                    ]
+                }
+            ]
+        },
+        {
+            "subevent_id": "7",
+            "actors": [
+                {
+                    "actor": "1-15313-3-t-0",
+                    "reasoning_process": "The call for reason and science in the investigation highlights the scientific community's commitment to objectivity and logical thinking, rejecting baseless allegations.",
+                    "level_1_values": [
+                        {"value": "Be logical", "direction": "aligned"},
+                        {"value": "Have an objective view", "direction": "aligned"},
+                        {"value": "Be broadminded", "direction": "aligned"}
+                    ],
+                    "level_2_values": [
+                        "Universalism: objectivity",
+                        "Universalism: tolerance"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+Error: Parsed result is not a dictionary.

@@ -1,11 +1,16 @@
+# Deep Learning and Inference
+torch==2.10.0
 vllm==0.19.0
 transformers==4.57.6
-torch==2.10.0
 numpy==2.2.6
+mistral_common==1.11.0
 
+# API and Concurrency
 google-genai==1.73.1
 openai==2.31.0
 tenacity==9.1.4
 tqdm==4.67.3
 
+# Validation and Tooling
 pydantic==2.12.5
+modelscope==1.35.4

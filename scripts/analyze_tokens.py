@@ -2,9 +2,9 @@ import json
 import numpy as np
 from transformers import AutoTokenizer
 
-# =====================================================================
-# 1. Path Settings (Adjusted for server environment)
-# =====================================================================
+
+# --------------- Path Settings (Adjusted for server environment) ---------------
+
 MODEL_PATH = "/root/autodl-tmp/FEHU/models/LLM-Research/Meta-Llama-3.1-8B-Instruct"
 
 # Official input feature file (X)
@@ -15,9 +15,9 @@ VALUES_FILE = "/root/autodl-tmp/FEHU/dataset/gold_labels/train/train_human_value
 print("[INFO] Loading Llama-3 Tokenizer...")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, trust_remote_code=True)
 
-# =====================================================================
-# 2. Dataset Loading and Preprocessing
-# =====================================================================
+
+# --------------- Dataset Loading and Preprocessing ---------------
+
 print("[INFO] Loading raw datasets...")
 with open(BASE_FILE, 'r', encoding='utf-8') as f:
     train_base = json.load(f)
@@ -33,9 +33,9 @@ label_counts = []
 
 print("[INFO] Scanning dataset and computing token lengths (this may take a few seconds)...")
 
-# =====================================================================
-# 3. Token Calculation
-# =====================================================================
+
+# --------------- Token Calculation ---------------
+
 for article in train_base:
     guid = article.get("guid")
 
@@ -66,9 +66,9 @@ for article in train_base:
         # Count the total number of article-level human value labels annotated by experts
         label_counts.append(len(gold_data.get("article_human_values", [])))
 
-# =====================================================================
-# 4. Statistical Report Generation
-# =====================================================================
+
+# --------------- Statistical Report Generation ---------------
+
 print("\n" + "="*50)
 print("Dataset Token Statistical Analysis Report")
 print("="*50)

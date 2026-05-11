@@ -1,16 +1,20 @@
 import os
 from modelscope import snapshot_download
 
-# Define the target directory for model weights
+# Specify the model ID and download path
+# MODEL_ID = "LLM-Research/Meta-Llama-3.1-8B-Instruct"  # TODO: Change model here
+# MODEL_ID = "mistralai/Ministral-3-8B-Instruct-2512"
+MODEL_ID = "Qwen/Qwen3-8B"
+
 MODEL_SAVE_DIR = "/root/autodl-tmp/FEHU/models"
 
-print("Initializing model download from ModelScope: Llama-3.1-8B-Instruct...")
+print("Initializing model download from ModelScope: {MODEL_ID}...")
 print(f"Target directory: {MODEL_SAVE_DIR}")
 print("Downloading...")
 
 # Download the model snapshot
 model_dir = snapshot_download(
-    'LLM-Research/Meta-Llama-3.1-8B-Instruct',
+    MODEL_ID,
     cache_dir=MODEL_SAVE_DIR
 )
 
