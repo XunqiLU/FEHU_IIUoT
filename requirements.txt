@@ -2,6 +2,7 @@
 torch==2.10.0
 vllm==0.19.0
 transformers==4.57.6
+# transformers==5.10.2
 numpy==2.2.6
 mistral_common==1.11.0
 
@@ -14,3 +15,6 @@ tqdm==4.67.3
 # Validation and Tooling
 pydantic==2.12.5
 modelscope==1.35.4
+
+# Robustness Pipeline
+json-repair==0.59.10

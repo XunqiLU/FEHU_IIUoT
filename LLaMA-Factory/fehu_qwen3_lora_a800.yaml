@@ -1,0 +1,49 @@
+### 模型及基础配置
+model_name_or_path: /root/autodl-tmp/FEHU/models/Qwen/Qwen3-8B
+stage: sft
+do_train: true
+finetuning_type: lora
+# template: qwen3
+template: qwen3_nothink
+
+### LoRA 参数
+lora_target: all
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+
+### 数据集配置
+dataset: fehu_train
+eval_dataset: fehu_dev
+cutoff_len: 12288
+preprocessing_num_workers: 8
+
+### 显存优化（A800支持FA2，但需先装包；不确定则保持sdpa）
+gradient_checkpointing: true
+flash_attn: sdpa
+# flash_attn: fa2
+
+### 训练超参数
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+# learning_rate: 2.0e-4
+learning_rate: 1.0e-4
+# num_train_epochs: 3.0
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+# warmup_ratio: 0.1
+warmup_ratio: 0.03
+bf16: true
+
+### 评估与保存
+eval_strategy: steps
+eval_steps: 50
+per_device_eval_batch_size: 2
+save_strategy: steps
+save_steps: 50
+save_total_limit: 3
+logging_steps: 10
+
+output_dir: /root/autodl-tmp/FEHU/models/Qwen/Qwen3-8B-FEHU-LoRA
+overwrite_output_dir: true
+plot_loss: true

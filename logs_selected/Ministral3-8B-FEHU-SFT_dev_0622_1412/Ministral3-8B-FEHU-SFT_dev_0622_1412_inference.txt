@@ -1,0 +1,252 @@
+=== Inference Runtime Log for Ministral3-8B-FEHU-SFT_dev_0622_1412 ===
+
+[INFO] Loading official dictionaries and hierarchy...
+[SUCCESS] Dictionaries loaded successfully.
+
+[INFO] Initializing vLLM engine...
+INFO 06-22 14:12:23 [utils.py:233] non-default args: {'tokenizer_mode': 'mistral', 'trust_remote_code': True, 'max_model_len': 20480, 'disable_log_stats': True, 'enforce_eager': True, 'limit_mm_per_prompt': {'image': 0}, 'model': '/root/autodl-tmp/FEHU/models/mistralai/Ministral3-8B-FEHU-SFT'}
+INFO 06-22 14:12:23 [model.py:549] Resolved architecture: Mistral3ForConditionalGeneration
+INFO 06-22 14:12:23 [model.py:1678] Using max model len 20480
+INFO 06-22 14:12:23 [scheduler.py:238] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 06-22 14:12:23 [vllm.py:790] Asynchronous scheduling is enabled.
+WARNING 06-22 14:12:23 [vllm.py:848] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 06-22 14:12:23 [vllm.py:859] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 06-22 14:12:24 [vllm.py:1025] Cudagraph is disabled under eager mode
+INFO 06-22 14:12:24 [compilation.py:290] Enabled custom fusions: norm_quant, act_quant
+INFO 06-22 14:12:25 [registry.py:126] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+[INFO] Loading official dictionaries and hierarchy...
+[SUCCESS] Dictionaries loaded successfully.
+(EngineCore pid=10371) INFO 06-22 14:12:32 [core.py:105] Initializing a V1 LLM engine (v0.19.0) with config: model='/root/autodl-tmp/FEHU/models/mistralai/Ministral3-8B-FEHU-SFT', speculative_config=None, tokenizer='/root/autodl-tmp/FEHU/models/mistralai/Ministral3-8B-FEHU-SFT', skip_tokenizer_init=False, tokenizer_mode=mistral, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=20480, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=/root/autodl-tmp/FEHU/models/mistralai/Ministral3-8B-FEHU-SFT, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_images_per_batch': 0, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}
+(EngineCore pid=10371) INFO 06-22 14:12:34 [registry.py:126] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.
+(EngineCore pid=10371) INFO 06-22 14:12:35 [parallel_state.py:1400] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.17.0.8:54607 backend=nccl
+(EngineCore pid=10371) INFO 06-22 14:12:35 [parallel_state.py:1716] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=10371) INFO 06-22 14:12:35 [gpu_model_runner.py:4735] Starting to load model /root/autodl-tmp/FEHU/models/mistralai/Ministral3-8B-FEHU-SFT...
+(EngineCore pid=10371) INFO 06-22 14:12:36 [vllm.py:790] Asynchronous scheduling is enabled.
+(EngineCore pid=10371) WARNING 06-22 14:12:36 [vllm.py:848] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(EngineCore pid=10371) WARNING 06-22 14:12:36 [vllm.py:859] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore pid=10371) INFO 06-22 14:12:36 [vllm.py:1025] Cudagraph is disabled under eager mode
+(EngineCore pid=10371) INFO 06-22 14:12:36 [compilation.py:290] Enabled custom fusions: norm_quant, act_quant
+(EngineCore pid=10371) INFO 06-22 14:12:36 [cuda.py:334] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=10371) INFO 06-22 14:12:36 [flash_attn.py:596] Using FlashAttention version 2
+Loading safetensors checkpoint shards:   0% Completed | 0/10 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  10% Completed | 1/10 [00:00<00:01,  5.89it/s]
+Loading safetensors checkpoint shards:  20% Completed | 2/10 [00:00<00:02,  3.82it/s]
+Loading safetensors checkpoint shards:  30% Completed | 3/10 [00:00<00:02,  3.34it/s]
+Loading safetensors checkpoint shards:  40% Completed | 4/10 [00:01<00:01,  3.16it/s]
+Loading safetensors checkpoint shards:  50% Completed | 5/10 [00:01<00:01,  3.07it/s]
+Loading safetensors checkpoint shards:  60% Completed | 6/10 [00:01<00:01,  3.03it/s]
+Loading safetensors checkpoint shards:  70% Completed | 7/10 [00:02<00:00,  3.00it/s]
+Loading safetensors checkpoint shards:  80% Completed | 8/10 [00:02<00:00,  3.00it/s]
+Loading safetensors checkpoint shards:  90% Completed | 9/10 [00:02<00:00,  3.01it/s]
+Loading safetensors checkpoint shards: 100% Completed | 10/10 [00:02<00:00,  3.40it/s]
+(EngineCore pid=10371) 
+(EngineCore pid=10371) INFO 06-22 14:12:39 [default_loader.py:384] Loading weights took 2.95 seconds
+(EngineCore pid=10371) INFO 06-22 14:12:40 [gpu_model_runner.py:4820] Model loading took 15.88 GiB memory and 3.519182 seconds
+(EngineCore pid=10371) INFO 06-22 14:12:49 [gpu_worker.py:436] Available KV cache memory: 4.34 GiB
+(EngineCore pid=10371) INFO 06-22 14:12:49 [kv_cache_utils.py:1319] GPU KV cache size: 33,472 tokens
+(EngineCore pid=10371) INFO 06-22 14:12:49 [kv_cache_utils.py:1324] Maximum concurrency for 20,480 tokens per request: 1.63x
+(EngineCore pid=10371) INFO 06-22 14:12:49 [core.py:283] init engine (profile, create kv cache, warmup model) took 9.60 seconds
+(EngineCore pid=10371) WARNING 06-22 14:12:49 [vllm.py:848] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(EngineCore pid=10371) WARNING 06-22 14:12:49 [vllm.py:859] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore pid=10371) INFO 06-22 14:12:49 [vllm.py:1025] Cudagraph is disabled under eager mode
+
+[INFO] Loading development dataset from: /root/autodl-tmp/FEHU/dataset/dev/dev_event_base.json
+
+[INFO] Constructing prompts for batch inference...
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+[transformers] `MistralCommonBackend.apply_chat_template(..., tokenize=False)` is unsafe and may lead to unexpected behavior. Please consider using `tokenize=True` instead and don't encode the output manually.
+
+[INFO] Executing batch inference on 177 items...
+Rendering prompts: 100%|██████████| 177/177 [00:00<00:00, 236.50it/s]
+Processed prompts: 100%|██████████| 177/177 [09:19<00:00,  3.16s/it, est. speed input: 1549.66 toks/s, output: 453.34 toks/s]
+
+[INFO] Parsing LLM outputs using Regex extraction...
+
+==================================================
+Parsing and Serialization Report
+==================================================
+Total articles processed: 177
+Failed JSON parses:       4
+Hallucinated labels dropped: 0
+--------------------------------------------------
+[SUCCESS] Task 1 outputs saved to: /root/autodl-tmp/FEHU/outputs/Ministral3-8B-FEHU-SFT/task1/
+[SUCCESS] Task 2 outputs saved to: /root/autodl-tmp/FEHU/outputs/Ministral3-8B-FEHU-SFT/task2/
+==================================================
+(EngineCore pid=10371) INFO 06-22 14:22:11 [core.py:1210] Shutdown initiated (timeout=0)
+(EngineCore pid=10371) INFO 06-22 14:22:11 [core.py:1233] Shutdown complete
+[rank0]:[W622 14:22:11.453702182 ProcessGroupNCCL.cpp:1553] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
