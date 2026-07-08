@@ -29,10 +29,12 @@ from collections import defaultdict
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-HIERARCHY_FILE = os.path.join(PROJECT_ROOT, "dataset/hv_categories/level_2_to_level_1.json")
-L1_DICT_FILE   = os.path.join(PROJECT_ROOT, "dataset/hv_categories/human_value_level1_values.json")
-L2_DICT_FILE   = os.path.join(PROJECT_ROOT, "dataset/hv_categories/human_value_level2_values.json")
-DIR_DICT_FILE  = os.path.join(PROJECT_ROOT, "dataset/hv_categories/direction_mapping.json")
+DATASET_ROOT = "/Users/lijx/paper/ntcir19_fehu/dataset"
+
+HIERARCHY_FILE = os.path.join(DATASET_ROOT, "hv_categories/level_2_to_level_1.json")
+L1_DICT_FILE   = os.path.join(DATASET_ROOT, "hv_categories/human_value_level1_values.json")
+L2_DICT_FILE   = os.path.join(DATASET_ROOT, "hv_categories/human_value_level2_values.json")
+DIR_DICT_FILE  = os.path.join(DATASET_ROOT, "hv_categories/direction_mapping.json")
 
 
 def deduplicate_l1(l1_list: list) -> list:
@@ -50,11 +52,12 @@ def deduplicate_l1(l1_list: list) -> list:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base_file",   type=str,
-        default=os.path.join(PROJECT_ROOT, "dataset/dev/dev_event_base.json"))
+        default=os.path.join(DATASET_ROOT, "dev/dev_event_base.json"))
     parser.add_argument("--gold_file",   type=str,
-        default=os.path.join(PROJECT_ROOT, "dataset/gold_labels/dev/dev_human_values.json"))
+        default=os.path.join(DATASET_ROOT, "gold_labels/dev/dev_human_values.json"))
     parser.add_argument("--output_file", type=str,
-        default=os.path.join(PROJECT_ROOT, "dataset/finetune/fehu_dev.json"))
+        default=os.path.join(PROJECT_ROOT, "data/fehu_dev.json"))
+    parser.add_argument("--oversample", action="store_true", help="Oversample rare and contradictory examples (use for train only).")
     args = parser.parse_args()
 
     # ---- Load taxonomy and build reverse mappings (ID → Name) ----
@@ -145,6 +148,9 @@ Output exactly ONE JSON object with the following structure:
 
     ft_dataset = []
     skipped = 0
+
+    # L1 Value frequencies from analysis (IDs with < 100 occurrences)
+    RARE_L1_IDS = {"31", "51", "8", "39", "35", "48", "34", "36", "23", "24"}
 
     for item in base_data:
         guid = str(item.get("guid", ""))
@@ -241,12 +247,37 @@ Output the JSON evaluation for the actors above. Ensure "guid" is strictly "{gui
             "subevent_level_evaluation": list(subevent_eval_map.values()),
         }
 
-        ft_dataset.append({
+        # Check for rare values or contradictory for oversampling
+        has_rare = False
+        has_contradictory = False
+        
+        # We can quickly check the gold_item to see if rare values exist
+        for hv in gold_item.get("article_human_values", []):
+            if str(hv.get("l1_value")) in RARE_L1_IDS: has_rare = True
+            if str(hv.get("direction")) == "0": has_contradictory = True
+            
+        for se in gold_item.get("subevents_human_values", []):
+            for hv in se.get(SE_FIELD, []):
+                if str(hv.get("l1_value")) in RARE_L1_IDS: has_rare = True
+                if str(hv.get("direction")) == "0": has_contradictory = True
+
+        # Base sample
+        sample = {
             "system":      system_instruction,
             "instruction": user_query,
-            # compact JSON: no indent, minimal separators → ~15-20% fewer tokens
             "output":      json.dumps(output_json, ensure_ascii=False, separators=(',', ':')),
-        })
+        }
+        
+        ft_dataset.append(sample)
+        
+        # Oversampling logic
+        if args.oversample:
+            if has_rare:
+                # Duplicate rare samples 3 more times
+                ft_dataset.extend([sample] * 3)
+            elif has_contradictory:
+                # Duplicate contradictory samples 1 more time to balance the 2:1 ratio
+                ft_dataset.extend([sample] * 1)
 
     os.makedirs(os.path.dirname(args.output_file), exist_ok=True)
     with open(args.output_file, 'w', encoding='utf-8') as f:
