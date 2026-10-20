@@ -14,16 +14,39 @@ from vllm import LLM, SamplingParams
 
 # --------------- Path and Environment Settings ---------------
 
-# MODEL_PATH = "/root/autodl-tmp/FEHU/models/LLM-Research/Meta-Llama-3.1-8B-Instruct"  # TODO: Change model here
-# MODEL_PATH = "/root/autodl-tmp/FEHU/models/mistralai/Ministral-3-8B-Instruct-2512"
-MODEL_PATH = "/root/autodl-tmp/FEHU/models/Qwen/Qwen3-8B"
+# TODO: Change model here
+
+# MODEL = "llama"
+MODEL = "ministral"
+# MODEL = "qwen"
+# MODEL = "deepseek"
+
+if MODEL == "llama":
+    MODEL_PATH = "/root/autodl-tmp/FEHU/models/LLM-Research/Meta-Llama-3.1-8B-Instruct"
+    MODEL_NAME = "Llama-3.1-8B"
+
+elif MODEL == "ministral":
+    MODEL_PATH = "/root/autodl-tmp/FEHU/models/mistralai/Ministral-3-8B-Instruct-2512"
+    MODEL_NAME = "Ministral-3-8B"
+    # MODEL_PATH = "/root/autodl-tmp/FEHU/models/mistralai/Ministral3-8B-FEHU-SFT"
+    # MODEL_NAME = "Ministral3-8B-FEHU-SFT"
+
+elif MODEL == "qwen":
+    # MODEL_PATH = "/root/autodl-tmp/FEHU/models/Qwen/Qwen3-8B"
+    # MODEL_NAME = "Qwen3-8B"
+    MODEL_PATH = "/root/autodl-tmp/FEHU/models/Qwen/Qwen3-8B-FEHU-SFT"
+    MODEL_NAME = "Qwen3-8B-FEHU-SFT"
+
+elif MODEL == "deepseek":
+    # MODEL_PATH = "/root/autodl-tmp/FEHU/models/deepseek-ai/DeepSeek-R1-Distill-Llama-8B"
+    # MODEL_NAME = "DeepSeek-R1-Distill-Llama-8B"
+    MODEL_PATH = "/root/autodl-tmp/FEHU/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+    MODEL_NAME = "DeepSeek-R1-Distill-Qwen-7B"
+
+else:
+    raise ValueError("Unknown model")
 
 DEV_DATA_FILE = "/root/autodl-tmp/FEHU/dataset/dev/dev_event_base.json"  # TODO: Change string here
-
-# Automatically build the directory structure required by the official guidelines
-# MODEL_NAME = "Llama-3.1-8B"  # TODO: Change model here
-# MODEL_NAME = "Ministral-3-8B"
-MODEL_NAME = "Qwen3-8B"
 
 OUTPUT_BASE_DIR = f"/root/autodl-tmp/FEHU/outputs/{MODEL_NAME}"
 TASK1_DIR = os.path.join(OUTPUT_BASE_DIR, "task1")
@@ -71,22 +94,41 @@ def main():
     # --------------- Model and Engine Initialization ---------------
 
     print("\n[INFO] Initializing vLLM engine...")
+
+    kwargs = {}
+
+    if MODEL == "ministral":
+        kwargs["enforce_eager"] = True
+        kwargs["tokenizer_mode"] = "mistral"
+        kwargs["limit_mm_per_prompt"] = {"image": 0}
+
     llm = LLM(
         model=MODEL_PATH,
         trust_remote_code=True,
         gpu_memory_utilization=0.9,
         tensor_parallel_size=1,
         max_model_len=20480,
-        # enforce_eager=True,  # TODO: Just for Mistral
-        # tokenizer_mode="mistral"  # TODO: Just for Mistral
+        **kwargs
     )
     tokenizer = llm.get_tokenizer()
+
+    if MODEL in "llama":
+        stop_tokens = ["</s>", "<|eot_id|>"]
+
+    elif MODEL == "ministral":
+        stop_tokens = ["</s>"]
+
+    elif MODEL == "qwen":
+        stop_tokens = ["</s>", "<|im_end|>"]
+
+    elif MODEL == "deepseek":
+        stop_tokens = ["</s>", "<|end_of_sentence|>", "<|eot_id|>"]
 
     sampling_params = SamplingParams(
         temperature=0.0,
         top_p=1.0,
         max_tokens=8192,
-        stop=["</s>", "<|eot_id|>", "<|im_end|>"],
+        stop=stop_tokens,
         include_stop_str_in_output=False
     )
 
@@ -96,7 +138,7 @@ def main():
     with open(DEV_DATA_FILE, 'r', encoding='utf-8') as f:
         dev_data = json.load(f)
 
-    # test_subset = dev_data[:2]  # TODO: Uncomment the subset slicing for debugging purposes if needed
+    # test_subset = dev_data[:3]  # TODO: Uncomment the subset slicing for debugging purposes if needed
     test_subset = dev_data
 
     # --------------- Prompt Construction and Templating ---------------
@@ -343,7 +385,16 @@ def main():
             {"role": "user", "content": user_query}
         ]
 
-        prompt = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        if MODEL == "qwen":
+            prompt = tokenizer.apply_chat_template(
+                messages, tokenize=False, add_generation_prompt=True,
+                enable_thinking=False
+            )
+        else:
+            prompt = tokenizer.apply_chat_template(
+                messages, tokenize=False, add_generation_prompt=True
+            )
+
         prompts.append(prompt)
 
     print(f"\n[INFO] Executing batch inference on {len(prompts)} items...")
@@ -363,6 +414,10 @@ def main():
         original_item = test_subset[i]
         guid = original_item['guid']
         generated_text = output.outputs[0].text.strip()
+
+        # remove thinking
+        if "</think>" in generated_text:
+            generated_text = generated_text.split("</think>")[-1].strip()
 
         # Immune to repeating and greedy traps
         if "```" in generated_text:

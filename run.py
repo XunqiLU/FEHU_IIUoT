@@ -7,10 +7,17 @@ import shutil
 
 # --------------- Experiment Configuration ---------------
 
-# EXP_NAME = "Llama-3.1-8B_dev"  # TODO: Change model here
-# EXP_NAME = "Ministral-3-8B_dev"
-EXP_NAME = "Qwen3-8B_dev"
-# EXP_NAME = "gemini-2.5-flash_dev"
+# TODO: Change model here
+# MODEL_NAME = "Llama-3.1-8B"
+MODEL_NAME = "Ministral-3-8B"
+# MODEL_NAME = "Qwen3-8B"
+# MODEL_NAME = "DeepSeek-R1-Distill-Llama-8B"
+# MODEL_NAME = "DeepSeek-R1-Distill-Qwen-7B"
+# MODEL_NAME = "Qwen3-8B-FEHU-SFT"
+# MODEL_NAME = "Ministral3-8B-FEHU-SFT"
+# MODEL_NAME = "gemini-2.5-flash"
+
+EXP_NAME = f"{MODEL_NAME}_dev"  # TODO: Change string here
 
 TIMESTAMP = datetime.datetime.now().strftime("%m%d_%H%M")
 RUN_ID = f"{EXP_NAME}_{TIMESTAMP}"
@@ -25,11 +32,6 @@ INFERENCE_SCRIPT = os.path.join(PROJECT_ROOT, "inference.py")  # TODO: Change st
 # INFERENCE_SCRIPT = os.path.join(PROJECT_ROOT, "inference_api.py")
 
 EVAL_SCRIPT = os.path.join(PROJECT_ROOT, "evaluation.py")
-
-# MODEL_NAME = "Llama-3.1-8B"  # TODO: Change model here
-# MODEL_NAME = "Ministral-3-8B"
-MODEL_NAME = "Qwen3-8B"
-# MODEL_NAME = "gemini-2.5-flash"
 
 DEFAULT_OUTPUT_DIR = os.path.join(PROJECT_ROOT, f"outputs/{MODEL_NAME}")
 
