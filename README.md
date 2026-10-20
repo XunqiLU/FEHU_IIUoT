@@ -1,7 +1,6 @@
 # NTCIR-19 FEHU (Fact-based Event-centric Human Value Understanding)
 
 > **Team Name:** IIUoT<br>
-> **Project Status:** Work in Progress
 
 ## Quick Start
 
