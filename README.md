@@ -1,7 +1,6 @@
 # NTCIR-19 FEHU (Fact-based Event-centric Human Value Understanding)
 
 > **Team Name:** IIUoT<br>
-> **Project Status:** Work in Progress
 
 This repository contains the training and inference pipeline for the NTCIR-19 FEHU shared task. It supports both local inference using the `vLLM` engine and model fine-tuning utilizing `LLaMA-Factory`.
 
