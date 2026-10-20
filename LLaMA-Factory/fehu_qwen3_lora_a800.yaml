@@ -15,7 +15,7 @@ lora_dropout: 0.05
 ### 数据集配置
 dataset: fehu_train
 eval_dataset: fehu_dev
-cutoff_len: 12288
+cutoff_len: 2048
 preprocessing_num_workers: 8
 
 ### 显存优化（A800支持FA2，但需先装包；不确定则保持sdpa）
@@ -24,8 +24,8 @@ flash_attn: sdpa
 # flash_attn: fa2
 
 ### 训练超参数
-per_device_train_batch_size: 2
-gradient_accumulation_steps: 4
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
 # learning_rate: 2.0e-4
 learning_rate: 1.0e-4
 # num_train_epochs: 3.0
